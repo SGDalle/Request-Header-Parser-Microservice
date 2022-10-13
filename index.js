@@ -24,7 +24,7 @@ app.get('/api/hello', function (req, res) {
   res.json({ greeting: 'hello API' });
 });
 
-// ip
+// Get ip, language and software
 app.get('/api/whoami', function (req, res) {
   let ip = req.ip
   let language = req.headers['accept-language']
